@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="Widget.Theme.MQTTkotlinsample.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">#F2FFFFFF</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+
+    <style name="Button.Red" parent="">
+        <item name="android:background">@color/colorRedButton</item>
+        <item name="android:backgroundTint">@color/colorRedButton</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="Button.Primary" parent="">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.ItemTitle" parent="">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.ItemText" parent="">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.ItemInfo" parent="">
+        <item name="android:textColor">@color/colorTextInfo</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+</resources>

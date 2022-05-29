@@ -1,0 +1,100 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/item_layout_marginLeft"
+        android:layout_marginRight="@dimen/item_layout_marginRight"
+        android:layout_height="70dp">
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_time"-->
+<!--            style="@style/TextView.ItemInfo"-->
+<!--            android:layout_width="83dp"-->
+<!--            android:layout_height="19dp"-->
+<!--            android:text="14:30 "-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.313" />-->
+
+        <!--        <TextView-->
+<!--            android:id="@+id/tv_place"-->
+<!--            android:layout_width="212dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:text="Корпус Б, Этаж 1"-->
+<!--            style="@style/TextView.ItemInfo"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/tv_status"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/tv_data" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_status"-->
+<!--            style="@style/TextView.ItemInfo"-->
+<!--            android:layout_width="212dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:text="В процессе доставки"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.567"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/tv_time"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/tv_time" />-->
+
+        <TextView
+            android:id="@+id/tv_data"
+            style="@style/TextView.ItemInfo"
+            android:layout_width="83dp"
+            android:layout_height="19dp"
+            android:layout_marginBottom="32dp"
+            android:text="21.04.2022 "
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/TextView.ItemInfo"
+            android:layout_width="83dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="48dp"
+            android:text="Код ячейки: "
+            app:layout_constraintBottom_toTopOf="@+id/bt_chalenge_start_move"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.313" />
+
+        <Button
+            android:id="@+id/bt_chalenge_start_move"
+            style="@style/Button.Red"
+            android:layout_width="175dp"
+            android:layout_height="42dp"
+
+            android:gravity="center_horizontal"
+            android:text="Резервировать"
+            android:textAlignment="center"
+
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="1dp"
+        android:background="@color/gray"
+        >
+    </LinearLayout>
+
+</LinearLayout>

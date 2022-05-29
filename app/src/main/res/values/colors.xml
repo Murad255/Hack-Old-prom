@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#F5F5F6</color>
+    <color name="gray">#E1E2E1</color>
+
+    <color name="colorPrimaryDark">#14124F</color>
+    <color name="colorAccent">#FF018786</color>
+    <color name="colorSecondaryVariant">#B0ACB8</color>
+    <color name="colorSecondary">#FF018786</color>
+
+    <color name="colorBackground">#04011F</color>
+    <color name="colorPrimary">#393BE4</color>
+    <color name="colorPrimaryRed">#D41930</color>
+
+    <color name="colorButton">#8B6BCA</color>
+    <color name="colorRedButton">#D41930</color>
+    <color name="colorButtonEnable">#E1E2E1</color>
+
+<!--    <color name="colorText">#2E2E54</color>-->
+<!--    <color name="colorTextInfo">#2E2E54</color>-->
+    <color name="colorText">#14124F</color>
+    <color name="colorTextInfo">#14124F</color>
+
+    <color name="colorTextRed">#D41930</color>
+
+
+
+    <color name="colorRecieveText">#00FF00</color>
+    <color name="colorSendText">#82CAFF</color>
+    <color name="colorStatusText">#FFDB58</color>
+    <color name="QTcolor">#31D133</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="red_error">#CCC81F1F</color>
+
+    <color name="ic_launcher_3_background">#FFFFFF</color>
+    <color name="ic_launcher_2_background">#FFFFFF</color>
+    <color name="ic_mind_background">#FFFFFF</color>
+
+
+
+</resources>

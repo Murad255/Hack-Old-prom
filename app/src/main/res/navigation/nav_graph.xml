@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ConnectFragment">
+
+    <fragment
+        android:id="@+id/ConnectFragment"
+        android:name="com.example.mqttkotlinsample.fragments.ConnectFragment"
+        android:label="@string/connect_fragment_label"
+        tools:layout="@layout/fragment_connect"/>
+    <fragment
+        android:id="@+id/ClientFragment"
+        android:name="com.example.mqttkotlinsample.fragments.ClientFragment"
+        android:label="@string/client_fragment_label"
+        tools:layout="@layout/fragment_client">
+        <action
+            android:id="@+id/action_ClientFragment_to_orderStatusFragment"
+            app:destination="@id/orderStatusFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mqttkotlinsample.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.example.mqttkotlinsample.fragments.DeliveryTaskFragment"
+        android:label="fragment_task_list"
+        tools:layout="@layout/fragment_delivery_task_list" />
+    <fragment
+        android:id="@+id/СonfirmSelectionFragment"
+        android:name="com.example.mqttkotlinsample.fragments.ConfirmSelectionFragment"
+        android:label="fragment_confirm_selection"
+        tools:layout="@layout/fragment_confirm_selection" />
+    <fragment
+        android:id="@+id/orderStatusFragment"
+        android:name="com.example.mqttkotlinsample.OrderStatusFragment"
+        android:label="fragment_order_status"
+        tools:layout="@layout/fragment_order_status" >
+        <action
+            android:id="@+id/action_orderStatusFragment_to_ClientFragment"
+            app:destination="@id/ClientFragment" />
+    </fragment>
+
+</navigation>

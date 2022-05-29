@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".fragments.OrderStatusFragment"
+android:background="@color/white"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="@dimen/item_layout_marginLeft"
+        android:paddingRight="@dimen/item_layout_marginRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+<!--            <TextView-->
+<!--                style="@style/TextView.ItemTitle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Название: " />-->
+
+            <TextView
+                android:id="@+id/tv_chalenge_info"
+                style="@style/TextView.ItemTitle"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:text="243" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Информация о заказе"
+            style="@style/TextView.ItemInfo"
+            android:textSize="14dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Артикул: "
+                style="@style/TextView.ItemInfo"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_chalenge_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextView.ItemInfo"
+                android:text="21042022 "
+                android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество ячеек:"
+                style="@style/TextView.ItemInfo"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_box_counts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextView.ItemInfo"
+                android:text="7 шт"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Доступ имуют:"
+                style="@style/TextView.ItemInfo"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextView.ItemInfo"
+                android:text="Петров М.Д., Фёдоров В.В., Иванов.И.И."
+                android:textSize="14dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="203dp"
+            android:src="@drawable/map2" />
+
+        <Button
+            android:id="@+id/bt_status"
+            style="@style/Button.Red"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+
+
+            android:text="Сканировать ячейку"
+            android:textAlignment="center"
+            android:textAllCaps="false" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_status"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="В процессе доставки"-->
+<!--            style="@style/TextView.ItemInfo"-->
+<!--            android:textSize="14dp" />-->
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_status_list"
+        android:name="com.example.mqttkotlinsample.fragments.OrderStatusFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/status_item" />
+
+
+</LinearLayout>
